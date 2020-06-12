@@ -338,22 +338,22 @@ tbody tr:hover {
     top: 0;
   }
   table tbody tr td:nth-child(1):before {
-    content: "Date";
+    content: "Contest ID";
   }
   table tbody tr td:nth-child(2):before {
-    content: "Order ID";
+    content: "Contest Name";
   }
   table tbody tr td:nth-child(3):before {
-    content: "Name";
+    content: "Your Rank";
   }
   table tbody tr td:nth-child(4):before {
-    content: "Price";
+    content: "His Rank";
   }
   table tbody tr td:nth-child(5):before {
-    content: "Quantity";
+    content: "Your Rating";
   }
   table tbody tr td:nth-child(6):before {
-    content: "Total";
+    content: "His Rating";
   }
 
   .column4,
