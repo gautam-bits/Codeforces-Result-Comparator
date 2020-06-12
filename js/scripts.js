@@ -63,7 +63,7 @@ function DisplayResults(you , his ) {
       return `
       <tr>
         <td class="column1">${contestlink}${ContestId}</a></td>
-        <td class="column2">${ContestName}</td>
+        <td class="column2">${contestlink}${ContestName}</a></td>
         <td class="column3">${YourRank}</td>
         <td class="column4">${HisRank}</td>
         <td class="column5">${YourRating}</td>
