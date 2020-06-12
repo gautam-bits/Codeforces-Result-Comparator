@@ -6,17 +6,31 @@ function fetchdata(val1 , val2) {
     let endpoint2 = `https://codeforces.com/api/user.rating?handle=${val2}`;
     //console.log(420);
     let apiRequest1 = fetch(endpoint1).then(function(response){ 
-      return response.json()
+        return response.json()
     });
 
     let apiRequest2 = fetch(endpoint2).then(function(response){
-      return response.json()
+        return response.json()
     });
 
+
+    
     Promise.all([apiRequest1,apiRequest2]).then(function(values){
-      //console.log(4743);
-      DisplayResults(values[0],values[1])  
-    });
+        //console.log(4743);
+
+        if(values[0].status === "FAILED") {
+          alert("ENTER CORRECT 'Your Handle/Username' ! ")
+        }
+        
+        else if(values[1].status === "FAILED") {
+          alert("ENTER CORRECT 'Friend's Handle/Username' ! ")
+        }
+        else {
+          DisplayResults(values[0],values[1])
+        }
+            
+      });
+
 
 }
 
